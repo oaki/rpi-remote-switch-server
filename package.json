@@ -1,0 +1,21 @@
+{
+  "name": "rpi-remote-switch-server",
+  "version": "1.0.0",
+  "description": "Server application for Raspberry Pi Remote Switch",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "typings install"
+  },
+  "author": "Dominik Palo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DominikPalo/rpi-remote-switch-server.git"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
+  }
+}
