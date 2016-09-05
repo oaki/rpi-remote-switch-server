@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    Hello world
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 </head>
 <body>
+    <input type="checkbox" title="A">
+    <input type="checkbox" title="B">
+    <input type="checkbox" title="C">
+    <input type="checkbox" title="D">
 
+
+    <script>
+        $(":checkbox").change(function() {
+            $.post("/", {
+                "relay": this.title,
+                "state": this.checked
+            });
+
+        });
+    </script>
 </body>
 </html>
